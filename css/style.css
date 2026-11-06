@@ -1,0 +1,14 @@
+
+    /* Estilo para celular */
+@media screen and (max-width: 768px) {
+
+    men{
+        margin: 0;
+        min-height: 100dvh;
+    }
+
+
+    img{
+        width: 300px;
+    
+    }
