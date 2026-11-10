@@ -10,4 +10,198 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat'; /* Montserrat é a fonte padrão dos títulos do site */
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* =============== BARRA DE MENU =============== */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+
+/* Reset em TODOS os botões para remover bordas e fundos nativos */
+header button {
+    background: transparent;
+    border: none; /* Remove a borda nativa do button */
+    cursor: pointer; /* Cursor muda para indicar botão de click */
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste individual do tamanho das imagens dentro de cada botão */
+.icone-menu img {
+    width: 42px;
+    height: auto;
+}
+
+.lupa img {
+    width: 42px;
+    height: auto;
+    margin-left: -20px;
+}
+
+/* Logo centralizada / alinhada */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 36px;
+    width: auto;
+}
+
+/* Foto de perfil redonda */
+.foto-perfil img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* =============== BANNER DO SITE =============== */
+.banner {
+    width: 100%;
+}
+
+/* =============== TEXTO DE APRESENTAÇÃO =============== */
+.apresentacao {
+    background-color: #0164F3;
+    color:#ffffff;
+    padding: 16px 16px;
+    border-radius: 12px; /* Arredondamento das pontas */
+}
+/* Zere as margens dos elementos internos para evitar o margin collapse */
+.apresentacao h1 {
+    margin: 0;
+    margin-bottom: 8px; /* Espaço entre o título e o parágrafo */
+    font-size: 24px;
+}
+.apresentacao p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* =============== IMAGENS CURSOS DESTAQUES =============== */
+.carrossel-destaques {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+.destaques {
+    width: 116px;
+    height: auto;
+}
+
+/* =============== IMAGENS CONQUISTAS =============== */
+.carrossel-conquistas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+.conquistas {
+    width: 116px;
+    height: auto;
+}
+
+/* =============== SELEÇÃO DE CURSOS =============== */
+.selecao-cursos {
+    display: flex;
+    flex-direction: column;   /* Empilha os elementos um embaixo do outro */
+    align-items: flex-start;  /* Garante que todos fiquem alinhados na extrema esquerda */
+    gap: 15px; /*  Espaçamento fixo entre eles */
+    margin: 8px;
+}
+.curso {
+    width: 160px;
+    height: auto;
+}
+
+/* =============== FOOTER =============== */
+/* Configurações gerais do bloco */
+footer {
+    background-color: #071936;
+    color: #ffffff;
+    margin-top: 12px;
+    padding: 16px 36px;
+}
+/* Contatos */
+.contatos {
+    margin: 16px 0 24px 24px;
+}
+.contatos h6, p {
+    margin: 0;
+    font-size: 12px;
+}
+.contatos a {
+    color: inherit;
+    text-decoration: none;
+}
+.redes-sociais {
+    margin: 0 24px;
+}
+/* Redes Sociais */
+.redes-sociais h6, p {
+    margin: 0;
+    font-size: 12px;
+}
+.redes-sociais a {
+    color: inherit;
+    text-decoration: none;
+}
+/* Logo Branca */
+.footer-logo {
+    width: 120px;
+    height: auto;
+    display: block;    /* Garante o comportamento de bloco */
+    margin-left: auto; /* Joga para a direita */
+    margin-right: 36px;
+    margin-bottom: 24px;
+}
+/* Texto direitos autorais */
+.direitos-autorais {
+    text-align: center;
+}
+
+
+/* configurações tela login*/
+/* Configurações para celular */
+   
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    max-width: 250px;
+    min-height: 85dvh;
+
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.texlog{
+    font-size: 40px;
+
+}
+label{
+    font-size: 20px; 
+    display: block;
+    width: 100%;
+    text-align: left;
+   
+}
+
+
+
+
+>>>>>>> Stashed changes

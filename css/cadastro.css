@@ -1,0 +1,85 @@
+/* configurações tela login*/
+/* Configurações para celular */
+   
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    max-width: 250px;
+    min-height: 85dvh;
+
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.texlog{
+    font-size: 40px;
+
+}
+label{
+    font-size: 20px; 
+    display: block;
+    width: 100%;
+    text-align: left;
+   
+}
+
+.botoes{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 8px;
+
+}
+#botao1{
+    width: 65%;
+    color: #FF9800;
+    outline: 3px solid #FF9800;
+    outline-offset: -3px;
+    border-radius: 8px;
+}
+
+#botao2{
+    color: #ffffff;
+    font-size: 16px;
+    width: 30%;
+    background-color: 0164F3;
+}
+    
+input {
+    width: 300px;       /* Largura da caixa */
+    height: 45px;       /* Altura da caixa */
+    padding: 10px;      /* Espaçamento interno */
+    font-size: 16px;    /* Tamanho do texto */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Arredondamento */
+    box-sizing: border-box;
+}
+
+#esqueci{
+    color: #111111;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+
+}
+
+.logo_login{
+    width: 250px;
+}
+
+.botaogoogle{
+    margin-top: 40px;
+     width: 250px;
+}
