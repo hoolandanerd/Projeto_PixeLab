@@ -1,0 +1,46 @@
+/* =============== BANNER DO SITE =============== */
+.banner {
+    width: 100%;
+}
+
+/* =============== TEXTO DE APRESENTAÇÃO =============== */
+.apresentacao {
+    background-color: #0164F3;
+    color:#ffffff;
+    padding: 16px 16px;
+    border-radius: 12px; /* Arredondamento das pontas */
+}
+/* Zere as margens dos elementos internos para evitar o margin collapse */
+.apresentacao h1 {
+    margin: 0;
+    margin-bottom: 8px; /* Espaço entre o título e o parágrafo */
+    font-size: 24px;
+}
+.apresentacao p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* =============== IMAGENS CURSOS DESTAQUES =============== */
+.carrossel-destaques {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+.destaques {
+    width: 116px;
+    height: auto;
+}
+
+/* =============== IMAGENS CONQUISTAS =============== */
+.carrossel-conquistas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+.conquistas {
+    width: 116px;
+    height: auto;
+}
