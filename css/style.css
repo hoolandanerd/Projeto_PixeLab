@@ -83,6 +83,43 @@ header button {
     font-size: 13px;
 }
 
+/* =============== IMAGENS CURSOS DESTAQUES =============== */
+.carrossel-destaques {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+.destaques {
+    width: 116px;
+    height: auto;
+}
+
+/* =============== IMAGENS CONQUISTAS =============== */
+.carrossel-conquistas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 4px;
+}
+.conquistas {
+    width: 116px;
+    height: auto;
+}
+
+/* =============== SELEÇÃO DE CURSOS =============== */
+.selecao-cursos {
+    display: flex;
+    flex-direction: column;   /* Empilha os elementos um embaixo do outro */
+    align-items: flex-start;  /* Garante que todos fiquem alinhados na extrema esquerda */
+    gap: 15px; /*  Espaçamento fixo entre eles */
+    margin: 8px;
+}
+.curso {
+    width: 160px;
+    height: auto;
+}
+
 /* =============== FOOTER =============== */
 /* Configurações gerais do bloco */
 footer {
