@@ -8,22 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>PixeLab</h1>
         <main>
-            <h3>Login</h3>
+              <img class="logo_login" src="/imagens/logo-principal.svg" alt="logo do site">
+            <h3 class="texlog">Login</h3>
             <section>
-                <label for="usuario">Usuario</label><br>
+                <label for="usuario">Email ou CPF</label><br>
                 <input type="text" name="usuario" id="usuario"><br><br>
                 <label for="senha">Senha</label><br>
-                <input type="password" name="senha" id="senha"><br><br>
+                <input type="password" name="senha" id="senha"><br><br> 
+                <div class="separacaobotao">
+                    <button id="botao1" class="botoes">Não tenho conta</button>
+                    <button id="botao2" class="botoes">Entrar</button>
+                </div>  
+                <a id="esqueci" href="">Esqueci a senha</a>
             </section>
             <section>
-                <button>Não tenho conta</button>
-                <button>Entrar</button>
-                <p>Esqueci a senha</p>
-            </section>
-            <section>
-                <img src="/imagens/button google.png" alt="Cadastrar com google">
+                <img class="botaogoogle" src="/imagens/button google.png"  alt="Cadastrar com google">
             </section>
         </main>
     </header>
