@@ -1,3 +1,8 @@
+/* =============== BANNER DO SITE =============== */
+.banner {
+    width: 100%;
+}
+
 /* =============== BARRA DE MENU =============== */
 .menu {
     display: flex;

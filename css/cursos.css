@@ -1,17 +1,20 @@
-/* =============== BANNER DO SITE =============== */
-.banner {
-    width: 100%;
-}
-
 /* =============== SELEÇÃO DE CURSOS =============== */
-.selecao-cursos {
+/* Cards de cursos */
+.card-curso {
+    background-color: #87B8FF;
+    margin: 20px 0;
+    padding: 16px;
+    border-radius: 16px;
+
+    /* Alinhar texto á direita da imagem */
     display: flex;
-    flex-direction: column;   /* Empilha os elementos um embaixo do outro */
-    align-items: flex-start;  /* Garante que todos fiquem alinhados na extrema esquerda */
-    gap: 15px; /*  Espaçamento fixo entre eles */
-    margin: 8px;
+    align-items: center;
+    gap: 16px;
 }
 .curso {
     width: 160px;
     height: auto;
+}
+.info-curso h2 {
+    font-size: 18px;
 }
