@@ -83,3 +83,18 @@ input {
     margin-top: 40px;
      width: 250px;
 }
+
+#cadastro{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 190px;
+    cursor: pointer;
+    align-items: center;
+    height: 50px;
+    border-radius: 8px;
+    color: #e4e0e0;
+    font-size: 16px;
+    width: 110px;
+    background-color: 0164F3;
+}
