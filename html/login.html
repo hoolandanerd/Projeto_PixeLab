@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixeLab</title>
     <link rel="stylesheet" href="/css/cadastro.css">
-     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <main>
-            <img class="logo_login" src="/imagens/logo-principal.svg" alt="logo do site">
+    <header>
+        <img class="logo_login" src="/imagens/logo-principal.svg" alt="logo do site">
+    </header>
+    <main>  
         <h3 class="texlog">Login</h3>
         <section>
             <label for="usuario">Email ou CPF</label><br>
@@ -17,14 +19,14 @@
             <label for="senha">Senha</label><br>
             <input type="password" name="senha" id="senha"><br><br> 
             <div class="separacaobotao">
-                <button id="botao1" class="botoes">Não tenho conta</button>
-                <button id="botao2" class="botoes">Entrar</button>
+                <button type="button" class="btn btn-outline-secondary">Não tenho conta</button>
+                <button type="button" class="btn btn-outline-primary">Entrar</button>
             </div>  
             <a id="esqueci" href="">Esqueci a senha</a>
         </section>
         <section>
             <img class="botaogoogle" src="/imagens/button google.png"  alt="Cadastrar com google">
-        </section>
+        </section> 
     </main>
 </body>
 </html>
