@@ -1,0 +1,108 @@
+/* APARÊNCIA GERAL DE TODOS OS BOTÕES */
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    color: var(--bs-btn-color);
+    background-color: var(--bs-btn-bg, transparent);
+    border: 1px solid var(--bs-btn-border-color);
+
+    transition:
+        color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+/* BOTÃO AZUL */
+.btn-outline-primary {
+    --bs-btn-color: #0164F3;
+    --bs-btn-border-color: #0d6efd;
+
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+}
+
+/* BOTÃO LARANJA */
+.btn-outline-secondary {
+    --bs-btn-color: #FF9800;
+    --bs-btn-border-color: #FF9800;
+
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #FF9800;
+    --bs-btn-hover-border-color: #FF9800;
+}
+
+/* BOTÃO VERDE*/
+.btn-outline-verde {
+    --bs-btn-color: #51D464;
+    --bs-btn-border-color: #51D464;
+
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #51D464;
+    --bs-btn-hover-border-color: #51D464;
+}
+
+/* BOTÃO cinza*/
+.btn-outline-cinza {
+    --bs-btn-color: #6c757d;
+    --bs-btn-border-color: #6c757d;
+
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #6c757d;
+    --bs-btn-hover-border-color: #6c757d;
+}
+
+
+.separacaobotao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-entrar {
+    width: 80px;
+    height: 36px;
+}
+
+.btn-sem-conta {
+    width: 200px;
+    height: 36px;
+}
+
+.btn-cadastrar {
+    margin-left: 180px;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn-ok {
+    width: 75px;
+    height: 40px;
+}
+
+.codigo {
+    width: 35px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.bntcon{
+    margin-top: 30px;
+}

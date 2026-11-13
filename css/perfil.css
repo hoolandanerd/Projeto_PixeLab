@@ -1,0 +1,54 @@
+.ajuste_perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.nome {
+    font-size: 20px;
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.dados {
+    width: 100%;
+    margin-top: 20px;
+}
+.dados2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+strong{
+    font-size: 20px;
+    
+}
+
+.btntopo{
+    margin-top: 20px;
+}
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: #0164F3;
+    border: none;
+    margin: 20px 0;
+}
+
+.curso{
+    margin-bottom: 10px;
+}
+
+.btn-outline-secondary{
+    margin-bottom: 10px;
+}

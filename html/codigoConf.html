@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>PixeLab</title>
         <link rel="stylesheet" href="/css/cadastro.css">
+        <link rel="stylesheet" href="/css/botoes.css">
         <link rel="stylesheet" href="/css/style.css">
     </head>
 <body>
@@ -12,11 +13,26 @@
         <img class="logo_login" src="/imagens/logo-principal.svg" alt="Logo do site">
     </header>
     <main>
-        <section class="msgconfimacao">
-            <p>Enviamos um códigp de confirmação para o seu E-mail. Confirme o código</p>
-            <p>Confirmar código</p>
-            <button id="botaocad" class="botoes">ok</button>
-        </section>
+        <div class="container text-center mt-5">
+
+    <h3>Verificação de código</h3>
+
+    <p>Digite o código enviado para seu e-mail</p>
+
+    <form>
+        <div class="d-flex justify-content-center gap-2 mb-3">
+            <input class="form-control codigo" maxlength="1" inputmode="numeric">
+            <input class="form-control codigo" maxlength="1" inputmode="numeric">
+            <input class="form-control codigo" maxlength="1" inputmode="numeric">
+            <input class="form-control codigo" maxlength="1" inputmode="numeric">
+            <input class="form-control codigo" maxlength="1" inputmode="numeric">
+            <input class="form-control codigo" maxlength="1" inputmode="numeric">
+        </div>
+
+        <button type="button"  class="bntcon btn btn-outline-primary">Confirmar</button>
+    </form>
+</div>
+       
     </main>
 </body>    
 </html>
