@@ -1,0 +1,21 @@
+/* =============== SELEÇÃO DE CURSOS =============== */
+/* Cards de cursos */
+.card-curso {
+    background-color: #87B8FF;
+    margin: 20px 0;
+    padding: 16px;
+    border-radius: 16px;
+
+    /* Alinhar texto á direita da imagem */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.curso {
+    width: 160px;
+    height: auto;
+    border-radius: 16px;
+}
+.info-curso h2 {
+    font-size: 18px;
+}

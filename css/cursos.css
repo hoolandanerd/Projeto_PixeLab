@@ -1,20 +1,41 @@
-/* =============== SELEÇÃO DE CURSOS =============== */
-/* Cards de cursos */
-.card-curso {
-    background-color: #87B8FF;
-    margin: 20px 0;
-    padding: 16px;
-    border-radius: 16px;
+/* =============== Sessão Descrição =============== */
 
-    /* Alinhar texto á direita da imagem */
-    display: flex;
-    align-items: center;
-    gap: 16px;
+/* Para título com duas cores */
+.titulo-principal {
+  color: #071936; /* Azul escuro da primeira linha */
 }
-.curso {
-    width: 160px;
-    height: auto;
+.titulo-principal .destaque {
+  color: #0867F2; /* Azul vibrante da segunda linha */
+  display: block; /* Força a quebra de linha sem precisar usar <br> */
 }
-.info-curso h2 {
-    font-size: 18px;
+
+/* Texto de descrição do curso */
+.curso-descricao {
+    font-size: 14px;
+    margin-top: -16px;
 }
+
+/* =============== Sessão Info =============== */
+
+
+.info-curso {
+    background-color: #ffffff;
+    padding: 8px 20px;
+}
+
+.tag-curso {
+    background-color: #0867F2;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+.descricao {
+    margin-top: -16px;
+}
+
+.info {
+    margin-top: 16px;
+}
+
+/* =============== Sessão Preço =============== */
