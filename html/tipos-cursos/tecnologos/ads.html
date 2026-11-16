@@ -7,29 +7,65 @@
     <title>Página inicial</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/botoes.css">
     <link rel="stylesheet" href="/css/cursos.css">
+    <!-- JavaScript-->
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- Barra de navegação -->
-        <div class="menu">
-        <button type="button" id="botao-menu" class="icone-menu" aria-label="Abrir menu">
-            <img src="/imagens/icone-menu.png" alt="">
-        </button>
+    <!-- Barra de navegação -->
+    <div class="menu">
 
-        <button type="button" id="pesquisa" class="lupa" aria-label="Pesquisar">
+        <!-- Menu Hambúrguer -->
+        <div class="menu-hamburguer">
+
+            <button type="button" id="botao-menu"
+                class="icone-menu"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="opcoes-menu">
+
+                <img src="/imagens/icone-menu.png" alt="">
+            </button>
+
+            <nav id="opcoes-menu" class="opcoes-menu"
+                aria-label="Tipos de cursos" hidden>
+
+                <p>Tipos de cursos:</p>
+
+                <ul>
+                    <li><a href="/html/tipos-cursos/livres.html">Livres</a></li>
+                    <li><a href="/html/tipos-cursos/tecnicos.html">Técnicos</a></li>
+                    <li><a href="/html/tipos-cursos/tecnologos.html">Tecnólogos</a></li>
+                    <li><a href="/html/tipos-cursos/bacharel.html">Bacharelado</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <!-- Lupa de Pesquisa -->
+        <button type="button" id="pesquisa" class="lupa"
+            aria-label="Pesquisar">
             <img src="/imagens/icone-lupa.png" alt="">
         </button>
 
+        <!-- Logo -->
         <a href="/html/index.html" class="logo">
-            <img src="/imagens/logo-horizontal.svg" alt="PixelLab Cursos de Tecnologia">
+            <img src="/imagens/logo-horizontal.svg"
+                alt="PixelLab Cursos de Tecnologia">
         </a>
 
-        <a href="/html/login.html" id="botao-perfil" class="foto-perfil" aria-label="Abrir perfil">
-            <img src="/imagens/foto-perfil.png" alt="Área da foto e acesso ao perfil">
+        <!-- Ícone / Foto do Perfil -->
+        <a href="/html/login.html" id="botao-perfil"
+            class="foto-perfil" aria-label="Abrir perfil">
+            <img src="/imagens/foto-perfil.png"
+                alt="">
         </a>
-        </div>
+
+    </div>
 
         <!-- Banner -->
         <img class="banner" src="/imagens/banner-analise-desenvolvimento.jpg" alt="Imagem de Banner da Página Inicial">
@@ -52,6 +88,7 @@
                     para resolver problemas complexos por meio da programação.
                 </p>
             </article>
+            <hr>
             <article class="info">
                 <small class="tag-curso">curso</small>
                 <h2 class="titulo-principal">Análise e Desenvolvimento <span class="destaque">de Sistemas</span></h2>
@@ -59,6 +96,47 @@
                     Aprenda na prática com docentes experientes e desenvolva as
                     habilidades mais desejadas pelo mercado de tecnologia.
                 </p>
+                <!-- Caixa Datas -->
+                <div class="datas">
+                    <div class="icone-calendario" aria-hidden="true">
+                        <img src="/imagens/calendario.svg" alt="Ícone Calendário">
+                    </div>
+
+                    <div class="data">
+                        <span>Data de início:</span>
+                        <time datetime="2026-10-10">10/10/2026</time>
+                    </div>
+
+                    <div class="data">
+                        <span>Data de término:</span>
+                        <time datetime="2028-10-10">10/10/2028</time>
+                    </div>
+                </div>
+                <!-- Caixa Aulas Ao-Vivo -->
+                <div class="ao-vivo">
+                    <div class="icone-ao-vivo" aria-hidden="true">
+                        <img src="/imagens/ao-vivo.svg" alt="Ícone Ao-Vivo">
+                    </div>
+
+                    <div class="texto-ao-vivo">
+                        <h3>Aulas Ao-vivo com doscente</h3>
+                        <p>Todas as segunda, quarta e sexta.</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Sessão Preço -->
+            <article class="preco">
+                <span><strong>50% da bolsa</strong></span>
+                <div class="box-preco">
+                    <p class="preco-antigo">de <s>12x 599,90</s> por</p>
+                    <p class="preco-atual">12x <span>R$ 299,45</span></p>
+                    <p class="preco-desconto">com <span>50% da bolsa</span></p>
+                </div>
+            
+                <!-- Botão inscreva-se -->
+                <button type="button"  class="btn btn-outline-primary btn-inscricao">Inscreva-se</button>
+
+                <small class="vagas-limitadas"><b>Vagas limitadas</b>. Garanta já a sua!</small>
             </article>
 
         </section>

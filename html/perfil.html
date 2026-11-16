@@ -8,30 +8,65 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/botoes.css">
     <link rel="stylesheet" href="/css/perfil.css">
+    <!-- JavaScript-->
+    <script src="/js/script.js" defer></script>
     
     <title>PixeLab</title>
 </head>
 <body>
   
     <header>
-        <!-- Barra de navegação -->
-        <div class="menu">
-        <button type="button" id="botao-menu" class="icone-menu" aria-label="Abrir menu">
-            <img src="/imagens/icone-menu.png" alt="">
-        </button>
+    <!-- Barra de navegação -->
+    <div class="menu">
 
-        <button type="button" id="pesquisa" class="lupa" aria-label="Pesquisar">
+        <!-- Menu Hambúrguer -->
+        <div class="menu-hamburguer">
+
+            <button type="button" id="botao-menu"
+                class="icone-menu"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="opcoes-menu">
+
+                <img src="/imagens/icone-menu.png" alt="">
+            </button>
+
+            <nav id="opcoes-menu" class="opcoes-menu"
+                aria-label="Tipos de cursos" hidden>
+
+                <p>Tipos de cursos:</p>
+
+                <ul>
+                    <li><a href="/html/tipos-cursos/livres.html">Livres</a></li>
+                    <li><a href="/html/tipos-cursos/tecnicos.html">Técnicos</a></li>
+                    <li><a href="/html/tipos-cursos/tecnologos.html">Tecnólogos</a></li>
+                    <li><a href="/html/tipos-cursos/bacharel.html">Bacharelado</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <!-- Lupa de Pesquisa -->
+        <button type="button" id="pesquisa" class="lupa"
+            aria-label="Pesquisar">
             <img src="/imagens/icone-lupa.png" alt="">
         </button>
 
+        <!-- Logo -->
         <a href="/html/index.html" class="logo">
-            <img src="/imagens/logo-horizontal.svg" alt="PixelLab Cursos de Tecnologia">
+            <img src="/imagens/logo-horizontal.svg"
+                alt="PixelLab Cursos de Tecnologia">
         </a>
 
-        <a href="/html/login.html" id="botao-perfil" class="foto-perfil" aria-label="Abrir perfil">
-            <img src="/imagens/foto-perfil.png" alt="Área da foto e acesso ao perfil">
+        <!-- Ícone / Foto do Perfil -->
+        <a href="/html/login.html" id="botao-perfil"
+            class="foto-perfil" aria-label="Abrir perfil">
+            <img src="/imagens/foto-perfil.png"
+                alt="">
         </a>
-        </div>
+
+    </div>
 
     </header>
     <main>

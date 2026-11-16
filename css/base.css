@@ -51,6 +51,68 @@ header button {
     object-fit: cover;
 }
 
+/* =============== MENU HAMBÚRGUER =============== */
+/* Contêiner do botão e menu */
+.menu-hamburguer {
+    position: relative;
+}
+
+/* Menu suspenso */
+.opcoes-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    z-index: 100;
+
+    width: 90vw;
+    box-sizing: border-box;
+
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px #071936 solid;
+    border-radius: 0 16px 16px 16px;
+}
+
+/* Título do menu */
+.opcoes-menu p {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 24px;
+    color: #0867F2;
+    margin: 4px 8px 12px;
+}
+
+/* Lista */
+.opcoes-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opcoes-menu li a {
+    display: block;
+    padding: 10px 8px;
+
+    background-color: #071936;
+    margin: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Efeito ao tocar ou passar o mouse */
+.opcoes-menu li a:hover {
+    background-color: #e6f1ff;
+    color: #0867F2;
+}
+
+/* Garante que o atributo hidden funcione */
+.opcoes-menu[hidden] {
+    display: none;
+}
+
+
 /* =============== FOOTER =============== */
 /* Configurações gerais do bloco */
 footer {
