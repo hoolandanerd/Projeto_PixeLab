@@ -52,3 +52,139 @@ hr {
 .btn-outline-secondary{
     margin-bottom: 10px;
 }
+
+.campo-curso {
+    width: 100%;
+    min-width: 0;
+}
+
+.seletor-curso {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.seletor-curso summary {
+    padding: 12px;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcoes-curso {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.opcoes-curso label {
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.opcoes-curso label:hover {
+    background: #fff3e0;
+}
+
+/* esconde a seta padrão do navegador */
+.seletor-curso summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Seta moderna */
+.seletor-curso summary::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+
+    border-right: 2px solid #ff9800;
+    border-bottom: 2px solid #ff9800;
+
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+
+    margin-right: 10px;
+}
+
+/* Seta para cima quando abrir */
+.seletor-curso[open] summary::after {
+    transform: rotate(225deg);
+}
+
+
+/* quando abrir, a seta gira */
+.seletor-curso[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.tit_curso{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.ingressar_curso{
+    background-color: #ffffff;
+}
+
+/*definir tamanho da label da pagina de incrição*/
+.ingressar_curso label {
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+/*definir tamanho do pagina de pagamento*/
+.sub{
+    font-size: 25px;
+}
+
+/*defini propriedades da label*/
+label{
+    font-size: 20px; 
+    display: block;
+    text-align: left;
+}
+
+.pagam{
+    width: 350px;       /* Largura da caixa */
+    height: 40px;       /* Altura da caixa */
+    padding: 10px;      /* Espaçamento interno */
+    font-size: 16px;    /* Tamanho do texto */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Arredondamento */
+    box-sizing: border-box;
+}
+
+
+.pagando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.cartao{
+    align-items: ;
+    width: 250px;
+}
+
+.logocartao{
+    width: 80px;
+
+}
