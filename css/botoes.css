@@ -118,14 +118,9 @@
     display: block;
     margin: 0 auto;
     width: 200px;
-    height: 56px;
+    height: 32px;
     font-size: 26px;
     font-weight: 800;
     font-family: 'Montserrat';
-}
-
-/*Botão cadastro cartão de credito*/
-.btn-cartao {
-  margin-top: 60px;
-  margin-left: 260px;
+    text-decoration: none;
 }
