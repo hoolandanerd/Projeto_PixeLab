@@ -1,0 +1,92 @@
+p{
+    display: block;
+    font-size: 16px;
+}
+
+.inform{
+    margin: 5px;
+}
+
+.bolsa{
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+
+.icone{
+    
+   
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+img{
+    width: 90px;
+    
+}
+
+.lapis{
+    margin-top: -20px;
+    width: 70px;
+}
+
+strong{
+    color: #ff9800;
+}
+.triagulo{
+    margin-top: -20px;
+    width: 80px;
+}
+
+/*espaçamento da lista e prencher o disco*/
+.requisitos ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+/* cor do disco*/
+.requisitos ul li::marker {
+    color: black;
+}
+
+/* Lista principal */
+section ol > li {
+    margin-bottom: 20px;
+}
+
+/* Lista de requisitos */
+.requisitos ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+table caption {
+    
+    caption-side: top;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ th,
+td {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+ th {
+    background-color: #f0c17e;
+    color: black;
+}
