@@ -51,10 +51,6 @@ header button {
     object-fit: cover;
 }
 
-@media (min-width: 720px) {
-  /* Estilos aplicados quando a largura for >= 720px */
-}
-
 /* =============== MENU HAMBÚRGUER =============== */
 /* Contêiner do botão e menu */
 .menu-hamburguer {
@@ -161,4 +157,156 @@ footer {
 /* Texto direitos autorais */
 .direitos-autorais {
     text-align: center;
+}
+
+/* ============================================== */
+/*                 RESPONSIVIDADE                 */
+/* ============================================== */
+/* Tablets e Deskstops 768px ou mais */
+
+/* =============== PESQUISA NO CABEÇALHO =============== */
+/* 1. Padrão (Celulares até 768px): mostra só o botão da lupa */
+.caixa-pesquisa {
+    display: none;
+    width: 100%;
+    max-width: 340px;
+    background-color: #ffffff;
+    border: 2px solid #071936;
+    border-radius: 50px;
+    padding: 4px 12px;
+}
+
+.caixa-pesquisa input {
+    width: 100%;             /* Faz o campo ocupar toda a largura interna da caixa oval */
+    border: none;            /* Remove a borda retangular cinza padrão */
+    outline: none;           /* Remove o contorno preto/azul ao clicar para digitar */
+    background: transparent; /* Deixa o fundo transparente para integrar com o <form> */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #071936;
+}
+
+/* 2. Tablets e Desktops (telas maiores que 768px): inverte a exibição */
+@media (min-width: 769px) {
+
+    .caixa-pesquisa {
+        display: flex;
+    }
+}
+
+/* =============== Barra de Menu =============== */
+/* 1. Padrão (Celulares até 768px): mostra o menu hambúrguer */
+
+/* Menu Desktop */
+.menu-desktop {
+    display: flex;
+    gap: 22px;
+    padding: 10px 20px;
+}
+
+.item-menu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0867F2;
+    color: #ffffff;
+
+    padding: 8px 20px;
+    border-radius: 13px;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+/* Retirar marcador padrão do summary */
+.dropdown-cursos summary {
+    list-style: none;
+}
+
+/* Seta do menu Cursos */
+.dropdown-cursos summary::after {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 12px;
+
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #cccccc;
+}
+
+/* Menu suspenso */
+.dropdown-cursos {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.opcoes-cursos {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 0;
+
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+
+    list-style: none;
+}
+
+.opcoes-cursos a {
+    display: block;
+    padding: 10px;
+    color: #0867F2;
+    text-decoration: none;
+}
+
+.opcoes-cursos a:hover {
+    background-color: #eeeeee;
+}
+
+/* Desktop */
+.menu-desktop {
+    display: flex;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+/* Dispositivos móveis */
+@media (max-width: 769px) {
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+}
+
+/* Ordem da logo no menu */
+@media (min-width: 769px) {
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+    height: 56px;
+    width: auto;
+    }
+
 }
