@@ -111,7 +111,9 @@
 .incri{
     margin-top: 70px;
     margin-left: 260px;
+}
 /* Botão Inscreva-se */
+
 .btn-inscricao {
     display: block;
     margin: 0 auto;
@@ -120,4 +122,10 @@
     font-size: 26px;
     font-weight: 800;
     font-family: 'Montserrat';
+}
+
+/*Botão cadastro cartão de credito*/
+.btn-cartao {
+  margin-top: 60px;
+  margin-left: 260px;
 }

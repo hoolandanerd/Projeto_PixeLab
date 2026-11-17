@@ -42,29 +42,60 @@
             <label><input type="radio" name="Ingressar" value="3">Boleto Bancário</label>
             </div>
         </section>
+
         <section>
-            <hr>
-            <p class="sub">Prenche os dados</p>
-            <label for="nome">Nome completo(Como está no cartão)</label>
-            <input class="pagam" type="text" name="nome" id="nome">
-            <label for="numero-cartao">Número do Cartão</label> 
+        <hr>
+        <div class="dados-cartao">
+
+            <div class="grupo-campo">
+                <label for="nome">Nome completo (Como está no cartão)</label>
+                <input class="pagam" type="text" id="nome">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="numero-cartao">Número do Cartão</label>
+
+                <div class="campo-numero-cartao">
+                    <input class="pagam" type="text"
+                        id="numero-cartao"
+                        placeholder="0000 0000 0000 0000">
+
+                    <img class="logocartao"
+                        src="/imagens/mastercad_logo.png"
+                        alt="Bandeira do cartão">
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="cpf">CPF</label>
+                <input class="pagam" type="text" id="cpf">
+            </div>
+
             <div class="pagando">
-                <input class=" cartao pagam" type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" inputmode="numeric" autocomplete="cc-number"maxlength="23">
-                <img class="logocartao" src="/imagens/mastercad_logo.png" alt="logo cartão">
-            </div>   
-            <label for="cpf">CPF</label>
-            <input class="pagam" type="text" name="cpf" id="cpf">
-            <label for="datavencimento">Data de Vencimento</label>
-            <input class="pagam" type="text" name="datavencimento" id="datavencimento">
-            <input class="pagam" type="text" name="datavencimento" id="datavencimento">
-            <label for="cod-seguranca">Código de segurança</label>
-            <input class="pagam" type="text" name="cod-seguranca" id="cod-seguranca">
 
+                <div class="campo-data">
+                    <label>Data de Vencimento</label>
 
-           
-        </section>
-        <button type="button"  class=" btn btn-outline-primary">Finalizar</button>
+                    <div class="data-inputs">
+                        <input class="pagam" type="text"
+                            id="mes" placeholder="Mês">
+
+                        <input class="pagam" type="text"
+                            id="ano" placeholder="Ano">
+                    </div>
+                </div>
+
+                <div class="campo-cvv">
+                    <label for="cod-seguranca">Código de segurança</label>
+                    <input class="pagam" type="text" id="cod-seguranca">
+                </div>
+
+            </div>
+
+        </div>
+        <button type="button"  class=" btn-cartao btn btn-outline-primary">Cadastrar</button>
     </main>
+
     <footer>
         <section class="contatos">
             <h6>Contato</h6>

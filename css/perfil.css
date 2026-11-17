@@ -173,18 +173,84 @@ label{
 }
 
 
-.pagando{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
 .cartao{
-    align-items: ;
-    width: 250px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
 }
 
+/*Logo do cartão*/
 .logocartao{
     width: 80px;
 
+}
+
+/* Organiza toda a seção */
+.dados-cartao {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+/* Organiza cada campo */
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+/* Inputs principais */
+.grupo-campo > .pagam {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+/* Número do cartão e bandeira */
+.campo-numero-cartao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.campo-numero-cartao input {
+    flex: 1;
+    min-width: 0;
+}
+
+.logocartao {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Vencimento e CVV */
+.pagando {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.campo-data,
+.campo-cvv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.data-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.data-inputs .pagam {
+    width: 60px;
+}
+
+.campo-cvv .pagam {
+    width: 80px;
 }
