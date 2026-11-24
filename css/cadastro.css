@@ -89,3 +89,109 @@ header{
 }
 
 
+@media (min-width: 1025px) {
+
+    /* Cartão centralizado */
+    .pagina-login,
+    .pagina-cadastro {
+        align-items: stretch;
+        width: 100%;
+        margin: 32px auto 48px;
+        padding: 40px 48px;
+
+        text-align: left;
+        border: 1px solid #dbe6fb;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(7, 25, 54, 0.08);
+    }
+
+    .pagina-login {
+        max-width: 480px;
+    }
+
+    .pagina-cadastro {
+        max-width: 760px;
+    }
+
+    /* ---------- LOGIN ---------- */
+    .pagina-login .texlog {
+        margin: 0 0 24px;
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .pagina-login input {
+        width: 100%;
+        height: 48px;
+    }
+
+    .pagina-login .separacaobotao {
+        gap: 16px;
+        margin-top: 8px;
+    }
+
+    .pagina-login .btn-sem-conta {
+        flex: 1;
+        width: auto;
+        height: 44px;
+    }
+
+    .pagina-login .btn-entrar {
+        width: 140px;
+        height: 44px;
+    }
+
+    .pagina-login #esqueci {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .pagina-login .botaogoogle {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 32px auto 0;
+    }
+
+    /* ---------- CADASTRO: campos em 2 colunas ---------- */
+    .pagina-cadastro .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px 28px;
+        width: 100%;
+    }
+
+    .pagina-cadastro .intro-cadastro {
+        grid-column: 1 / -1;
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .pagina-cadastro .campo {
+        min-width: 0;
+    }
+
+    .pagina-cadastro .campo-largo {
+        grid-column: 1 / -1;
+    }
+
+    .pagina-cadastro .campo label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+
+    .pagina-cadastro .campo input {
+        width: 100%;
+        height: 48px;
+    }
+
+    .pagina-cadastro .btn-cadastrar {
+        align-self: flex-end;
+        width: 180px;
+        height: 48px;
+        margin: 32px 0 0;
+    }
+
+}

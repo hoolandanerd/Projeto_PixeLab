@@ -90,3 +90,108 @@ td {
     background-color: #f0c17e;
     color: black;
 }
+
+@media (min-width: 1025px) {
+
+    .bolsa-pagina {
+        max-width: 1100px;
+        margin: 16px auto 0;
+    }
+
+    /* Introdução centralizada */
+    .bolsa-intro {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .bolsa-pagina h1 {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .bolsa-pagina h2 {
+        margin-top: 0;
+        font-size: 26px;
+        color: #0164F3;
+    }
+
+    .inform {
+        margin: 16px 0 0;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    /* Três cards de destaque com a mesma altura */
+    .bolsa {
+        margin: 40px 0;
+        gap: 28px;
+        align-items: stretch;
+    }
+
+    .bolsa .icone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        padding: 32px 24px;
+        border: 1px solid #dbe6fb;
+        border-radius: 16px;
+        box-shadow: 0 4px 14px rgba(7, 25, 54, 0.08);
+    }
+
+    .bolsa .icone img {
+        width: auto;
+        height: 84px;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    .bolsa .icone p {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    /* Regras à esquerda, tabela de modalidades à direita */
+    .bolsa-detalhes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        align-items: start;
+    }
+
+    .bolsa-detalhes > section {
+        min-width: 0;
+    }
+
+    .bolsa-detalhes h3 {
+        margin-top: 0;
+        font-size: 26px;
+    }
+
+    .bolsa-detalhes p,
+    .bolsa-detalhes li {
+        font-size: 17px;
+    }
+
+    .bolsa-detalhes table {
+        margin: 16px 0;
+    }
+
+    .bolsa-detalhes table caption {
+        font-size: 22px;
+    }
+
+    .bolsa-detalhes section:last-child > p {
+        margin: 0;
+    }
+
+    .bolsa-detalhes th,
+    .bolsa-detalhes td {
+        padding: 14px 18px;
+        font-size: 17px;
+    }
+
+}

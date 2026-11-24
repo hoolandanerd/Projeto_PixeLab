@@ -259,3 +259,195 @@ label{
     margin-top: 20px;
     margin-left: 270px;
 }
+
+@media (min-width: 1025px) {
+
+    /* ---------- PERFIL: coluna de dados + coluna de cursos ---------- */
+    .perfil-pagina {
+        display: grid;
+        grid-template-columns: minmax(320px, 380px) 1fr;
+        column-gap: 56px;
+        align-items: start;
+
+        max-width: 1100px;
+        margin: 16px auto 0;
+    }
+
+    .perfil-pagina > hr {
+        display: none; /* a separação agora é feita pelas colunas */
+    }
+
+    .perfil-lateral {
+        padding: 32px;
+        background-color: #f7faff;
+        border: 1px solid #dbe6fb;
+        border-radius: 16px;
+    }
+
+    .perfil-lateral .foto {
+        width: 130px;
+        height: 130px;
+    }
+
+    .perfil-lateral .nome {
+        font-size: 26px;
+    }
+
+    .perfil-lateral h2 {
+        font-size: 24px;
+    }
+
+    .perfil-lateral .dados {
+        margin-top: 28px;
+    }
+
+    .perfil-lateral .dados2 {
+        font-size: 18px;
+        margin: 4px 0 20px;
+    }
+
+    .perfil-lateral .btntopo {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .perfil-conteudo h2 {
+        margin-top: 0;
+        font-size: 26px;
+    }
+
+    .perfil-conteudo section + section {
+        margin-top: 40px;
+    }
+
+    /* Cada curso vira uma linha: nome à esquerda, status à direita */
+    .curso-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        padding: 18px 24px;
+        margin-bottom: 14px;
+        border: 1px solid #dbe6fb;
+        border-radius: 12px;
+    }
+
+    .curso-item .curso {
+        margin: 0;
+    }
+
+    .curso-item .btn {
+        flex-shrink: 0;
+        min-width: 150px;
+        margin-bottom: 0;
+    }
+
+    /* ---------- PAGAMENTO ---------- */
+    .pagamento-pagina {
+        max-width: 860px;
+        margin: 16px auto 0;
+    }
+
+    .pagamento-pagina h1 {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    .pagamento-pagina > section {
+        margin-bottom: 24px;
+        padding: 28px 36px;
+        border: 1px solid #dbe6fb;
+        border-radius: 16px;
+    }
+
+    .pagamento-pagina .sub {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .pagamento-pagina hr {
+        display: none;
+    }
+
+    /* Formas de pagamento lado a lado */
+    .pagamento-pagina .ingressar_curso {
+        display: flex;
+        gap: 16px;
+    }
+
+    .pagamento-pagina .ingressar_curso label {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        padding: 16px 20px;
+        font-size: 18px;
+        border: 2px solid #dbe6fb;
+        border-radius: 12px;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .pagamento-pagina .ingressar_curso label:hover {
+        border-color: #0164F3;
+    }
+
+    .pagamento-pagina .ingressar_curso label:has(input:checked) {
+        border-color: #0164F3;
+        background-color: #eef4ff;
+    }
+
+    .pagamento-pagina .ingressar_curso input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        accent-color: #0164F3;
+    }
+
+    /* Dados do cartão em 2 colunas */
+    .pagamento-pagina .dados-cartao {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 32px;
+    }
+
+    .pagamento-pagina .dados-cartao label {
+        font-size: 18px;
+    }
+
+    .pagamento-pagina .dados-cartao > .grupo-campo:first-child,
+    .pagamento-pagina .pagando {
+        grid-column: 1 / -1;
+    }
+
+    .pagamento-pagina .pagando {
+        gap: 32px;
+    }
+
+    /* Bandeira do cartão com a mesma altura do campo, para alinhar com o CPF */
+    .pagamento-pagina .dados-cartao {
+        align-items: start;
+    }
+
+    .pagamento-pagina .logocartao {
+        width: auto;
+        height: 40px;
+    }
+
+    .pagamento-pagina .data-inputs .pagam {
+        width: 110px;
+    }
+
+    .pagamento-pagina .campo-cvv .pagam {
+        width: 140px;
+    }
+
+    .pagamento-pagina .btn-cartao {
+        display: block;
+        width: 200px;
+        height: 46px;
+        margin: 28px 0 0 auto;
+    }
+
+}

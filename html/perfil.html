@@ -52,12 +52,47 @@
             aria-label="Pesquisar">
             <img src="/imagens/icone-lupa.png" alt="">
         </button>
+        <!-- Caixa de pesquisa para Tablets e Desktops -->
+        <form class="caixa-pesquisa" action="/html/cursos.html" method="get" role="search">
+            <input
+                type="search"
+                name="busca"
+                placeholder="Buscar cursos (ex: ADS, Front-End)..."
+                aria-label="Buscar cursos"
+            >
+            <button type="submit" aria-label="Pesquisar">
+                <img src="/imagens/icone-lupa.png" alt="">
+            </button>
+        </form>
+
 
         <!-- Logo -->
         <a href="/html/index.html" class="logo">
             <img src="/imagens/logo-horizontal.svg"
                 alt="PixelLab Cursos de Tecnologia">
         </a>
+        <!-- Menu barra para Tablets e Desktops -->
+        <nav class="menu-desktop" aria-label="Menu principal">
+
+            <a href="/html/index.html" class="item-menu">Home</a>
+
+            <details class="dropdown-cursos">
+                <summary class="item-menu">
+                    Cursos
+                </summary>
+
+                <ul class="opcoes-cursos">
+                    <li><a href="/html/tipos-cursos/livres.html">Livres</a></li>
+                    <li><a href="/html/tipos-cursos/tecnicos.html">Técnicos</a></li>
+                    <li><a href="/html/tipos-cursos/tecnologos.html">Tecnólogos</a></li>
+                    <li><a href="/html/tipos-cursos/bacharel.html">Bacharelado</a></li>
+                </ul>
+            </details>
+
+            <a href="/html/bolsa.html" class="item-menu">Bolsas</a>
+
+        </nav>
+
 
         <!-- Ícone / Foto do Perfil -->
         <a href="/html/login.html" id="botao-perfil"
@@ -69,7 +104,8 @@
     </div>
 
     </header>
-    <main>
+    <main class="perfil-pagina">
+      <div class="perfil-lateral">
         <div class="ajuste_perfil">
             <img class="foto"src="/imagens/foto-perfil.png" alt="Foto do usuário">
             <h1 class="nome">José Pereira da Silva</h1>
@@ -89,21 +125,25 @@
             <p class="dados2">jose_pereira@gmail.com</p>
         </div>
         <button class="btntopo btn btn-outline-primary">Editar</button>
+      </div>
         <hr>
+      <div class="perfil-conteudo">
         <section>
             <h2>Meus Cursos</h2>
-            <div class="ajuste"></div>
-            <p class="curso"><strong>Analise e desenvolvimento de sistema</strong></p>
-
-            <button type="button" class="btn btn-outline-secondary">Em andamento</button>
-            <p class="curso"><strong>Técnico de informatica</strong></p>
-            <button type="button" class="btn btn btn-outline-verde">Concluido</button>
+            <div class="curso-item">
+                <p class="curso"><strong>Analise e desenvolvimento de sistema</strong></p>
+                <button type="button" class="btn btn-outline-secondary">Em andamento</button>
+            </div>
+            <div class="curso-item">
+                <p class="curso"><strong>Técnico de informatica</strong></p>
+                <button type="button" class="btn btn btn-outline-verde">Concluido</button>
+            </div>
         </section>
         <section>
             <h2>Certificados</h2>
             <button type="button" class="btn btn btn-outline-cinza">Saiba Mais</button>
         </section>
-        
+      </div>
 
     </main>
     <!-- Footer -->
@@ -131,4 +171,5 @@
         </p>
     </footer>
     
+</body>
 </html>

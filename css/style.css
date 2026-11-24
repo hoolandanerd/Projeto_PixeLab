@@ -20,3 +20,15 @@ body {
 }
 
 }
+/* Acima de 1024 px */
+@media (min-width: 1025px) {
+
+    /* Conteúdo centralizado, com largura máxima de 1200px */
+    body {
+        box-sizing: border-box;
+        max-width: 1272px;      /* 1200px de conteúdo + 36px de respiro de cada lado */
+        margin: 36px auto;
+        padding: 0 36px;
+    }
+
+}
