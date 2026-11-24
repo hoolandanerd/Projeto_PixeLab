@@ -188,9 +188,16 @@ label{
 /* Organiza toda a seção */
 .dados-cartao {
     display: flex;
+    margin: 0 10px;
+    display: flex;
     flex-direction: column;
     gap: 18px;
-    width: 100%;
+}
+
+/* Botão Cadastrar (Página pagamento) */
+#btn-cad {
+    margin: 4px;
+    margin-left: auto;
 }
 
 /* Organiza cada campo */
